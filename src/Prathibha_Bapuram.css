@@ -1,0 +1,198 @@
+body {
+  background: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-0.3.5&s=44238906c13118d221271e9db28890f8&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb");
+  background-size:contain;
+  background-color: hsla(0,0%,100%,0.70);
+  background-blend-mode: overlay;
+}
+
+.svg {
+  display:none;
+}
+
+#udacity-logo {
+  fill: #02b3e4;
+}
+
+#udacity-logo:hover {
+  stroke: #02b3e4;
+  stroke-width: 2px;
+}
+
+.logo {
+  max-width: 100%;
+  margin: 5vw 0 0 0;
+  min-width: 50px;
+  min-height: 50px;
+  width: 9.7%;
+  height: 9.7%;
+}
+
+header {
+  max-width: 100%;
+  margin: 0 0 0 13%;
+  display: flex;
+}
+
+.position {
+  margin: 0 0 0 7%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.introduction {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.6vw;
+  color: #2d3c49;
+  margin-left: 50%;
+}
+
+.introduction:hover {
+  color: #b6496c;
+}
+
+h1:first-of-type {
+  margin-top: 20vw;
+}
+
+hr {
+  max-width: 100%;
+  width: 79%;
+  margin: 3.2% 0 6.5% 13%;
+  background-color: #566991;
+  color: #7d97ad;
+  height: 6px;
+}
+
+.code-image {
+  width: 79%;
+  height: 35vw;
+  margin: 0 0 0 13%;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 5px dashed black;
+}
+
+.code-image:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+.work-title {
+  background-color: #e9ddd7;
+  background-color: hsla(0,0%,80%,0.70);
+  color:#333;
+  width: 85%;
+  padding: 0.7%;
+  margin: 0 0 5vw 10%;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333;
+  font-size: 5vw;
+  border: 4px inset #a96e58;
+  opacity: 0.7;
+}
+
+.work {
+  display: flex;
+  display: grid;
+  margin-right: 15%;
+  margin-left: 10%;
+  flex-direction: column;
+}
+
+.work-images {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 75%;
+  margin: 50px 4.8% 40px 0;
+  border: 3px double black;
+  padding: 0.5vw;
+  box-shadow: 0.7vw 0px 0.7vw 0px black;
+}
+
+.work-images:hover {
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
+}
+
+.line {
+  max-width: 100%;
+  display: flex;
+  display: grid;
+  margin: 0 0 0 13%;
+}
+
+h2 {
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em black;
+  margin: 0 0 0 3.2%;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 10vw;
+  font-weight: 900;
+  color: #333;
+}
+
+p {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 2% 0 0 4.5%;
+  font-size: 1.8vw;
+  color: #7b8db0;
+}
+
+a {
+  color: #02b3e4;
+}
+
+img,
+embed,
+object,
+video,
+svg {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+  .work-images {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-images:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  p {
+    font-size: 2.5vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .line {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  h2 {
+    margin-top: 8%;
+    font-size: 2vw;
+  }
+  #todos {
+    margin-top: 15%;
+  }
+  #animal {
+    margin-top: 10%;
+  }
+  .work-images:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  hr {
+    width: 85%;
+  }
+}
